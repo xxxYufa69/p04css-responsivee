@@ -1,0 +1,396 @@
+<!-- yufaaaaaaaaaaaaaa aaaaaanannnnnnnnnnndaaaaaaaa 41215474 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form PMB</title>
+</head>
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h1:hover {
+    cursor: pointer;
+    transition: .2s;
+    letter-spacing: 5px;
+}
+
+.bungkus {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+ol li {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+
+ol li:hover {
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: .2s;
+}
+
+.peraturan {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(255, 41, 41);
+}
+
+.peraturan:hover {
+    cursor: pointer;
+    letter-spacing: 5px;
+    transition: .2s;
+}
+
+.bungkus2 {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 0, 89);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+}
+
+.judul {
+    font-size: 27px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(41, 38, 38);
+}
+
+.isi {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.inputin, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=radio] {
+    margin: 20px;
+}
+
+input[type=file] {
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    color: gray;
+}
+
+button {
+    width: 100%;
+    background-color: mediumturquoise;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(2, 100, 10);
+    transition: .2s;
+}
+img{
+ width:90%
+}
+
+@media only screen and (max-width: 768px) {
+    .header img{
+    width: 90%;
+    }
+
+    body {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    ol li {
+        font-size: 9px;
+    }
+
+    .petunjuk {
+        font-size: 10px;
+    }
+
+    .bungkus2 {
+        padding: 15px;
+    }
+
+    .judul {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .isi {
+        font-size: 9px;
+    }
+
+    .inputin, select {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    input[type=file] {
+        font-size: 10px;
+    }
+
+    button {
+        padding: 8px 10px;
+        margin: 8px 0;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    
+}
+</style>
+<body>
+    <div class="bungkus">
+        <div class="header">
+            <img src="kopsurat.png" alt="">
+        </div>
+        <h1>FORMULIR PENDAFTARAN MAHASISWA BARU STMIK IKMI CIREBON</h1>
+        <br>
+        <br>
+        <label for="peraturan" class="peraturan">Petunjuk Pengisian</label>
+        <ol>
+            <li>Isilah data isian dengan cermat, teliti dan benar</li>
+            <li>Isilah dengan huruf balok</li>
+            <li>Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah</li>
+        </ol>
+        <div class="bungkus2">
+            <h2 class="judul">Formulir Pendaftaran</h2>
+            <br>
+            <div>
+                <form action="">
+                    <div>
+                        <label for="nomor">Nomor Pendaftaran</label>
+                        <input class="inputin" type="number" id="nomor" placeholder="Masukkan Nomor Pendaftaran">
+                    </div>
+                    <div>
+                        <label for="nama">Nama Lengap</label><br>
+                        <label class="isi">(Diisi oleh calon mahasiswa yang mengikuti ujian saringan)</label>
+                        <input class="inputin" type="text" id="nama" placeholder="Masukkan Nama Lengkap">
+                    </div>
+                    <div>
+                        <label for="tanggalujian">Tanggal Ujian</label><br>
+                        <label class="isi">(Diisi oleh calon mahasiswa yang mengikuti ujian saringan)</label>
+                        <input class="inputin" type="date" id="tanggalujian">
+                    </div>
+                    <div>
+                        <label for="Jenis Kelamin">Jenis Kelamin</label><br>
+                        <select name="Jenis Kelamin" id="Jenis Kelamin">
+                            <option value=""></option>
+                            <option value="Pria">Pria</option>
+                            <option value="Wanita">Wanita</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="jenjang Studi">Jenjang Studi</label>
+                        <select name="jenjang" id="jenjang">
+                            <option value=""></option>
+                            <option value="Strata 1">Strata 1</option>
+                            <option value="Diploma 3">Diploma 3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="prodi">Program Studi</label>
+                        <select name="prodi" id="prodi">
+                            <option value=""></option>
+                            <option value="Akuntansi">Komputerisasi Akuntansi</option>
+                            <option value="Manajemen Perusahaan">Manajemen Perusahaan</option>
+                            <option value="Manajemen">Manajemen</option>
+                            <option value="Teknik informatika">Teknik informatika</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="kelas">Kelas</label>
+                        <select name="kelas" id="kelas">
+                            <option value="Karyawan">Karyawan</option>
+                            <option value="Reguler">Reguler</option>
+                            <option value="KIP">KIP</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="waktu">Waktu Kuliah</label>
+                        <select name="waktu" id="waktu">
+                            <option value=""></option>
+                            <option value="Pagi">Pagi</option>
+                            <option value="Sore">Sore</option>
+                            <option value="Malam">Malam</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="ukuran almamater">Ukuran Almamater</label>
+                        <select name="ukuran almamater" id="ukuran almamater">
+                            <option value=""></option>
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="Extra Large">Extra Large</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pembayaran">Sistem Pembayaran </label><br>
+                        <select name="pembayaran" id="pembayaran">
+                            <option value=""></option>
+                            <option value="Angsuran">Angsuran</option>
+                            <option value="Tunai">Tunai</option>
+                            <option value="Transfer">Transfer</option>
+                        </select>
+                    </div>
+                    <h2 class="judul">Data Pribadi</h2>
+                    <br>
+                    <div>
+                        <label for="agama">Agama</label><br>
+                        <select name="agama" id="agama">
+                            <option value=""></option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen Protestan">Kristen Protestan</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="ttl">Tempat, Tanggal Lahir</label>
+                        <input class="inputin" type="text" id="tempat" placeholder="Masukkan Tempat Lahir">
+                        <input class="inputin" type="date" id="ttl">
+                    </div>
+                    <div>
+                        <label for="alamat">Alamat Lengkap</label>
+                        <input class="inputin" type="text" id="alamat" placeholder="Masukkan Alamat Lengkap">
+                    </div>
+                    <div>
+                        <label for="telepon">Nomor Telepon</label>
+                        <input class="inputin" type="tel" id="telepon" placeholder="Masukkan Nomor Telepon">
+                    </div>
+                    <div>
+                        <label for="warga">Kewarganegaraan</label>
+                        <select name="warga" id="warga">
+                            <option value=""></option>
+                            <option value="WNI">WNI</option>
+                            <option value="WNA">WNA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="goldar">Golongan Darah</label>
+                        <select name="goldar" id="goldar">
+                            <option value=""></option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="namaortu">Nama Orang Tua / Wali</label>
+                        <input class="inputin" type="text" id="namaortu" placeholder="Masukkan Nama Orang Tua / Wali">
+                    </div>
+                    <div>
+                        <label for="pekerjaan">Pekerjaan</label>
+                        <select name="pekerjaan" id="pekerjaan">
+                            <option value=""></option>
+                            <option value="PNS/TNI/POLRI">PNS/TNI/POLRI</option>
+                            <option value="Swasta">Swasta</option>
+                            <option value="Wiraswasta">Wiraswasta</option>
+                            <option value="Lain-Lain">Lain-Lain</option>
+                        </select>
+                    </div>
+                    <h2 class="judul">Pendidikan Terakhir</h2>
+                    <br>
+                    <div>
+                        <label for="asalpendidikan">Asal SMA / SMK / MA</label>
+                        <input class="inputin" type="text" id="asalpendidikan" placeholder="Masukkan Asal Pendidikan">
+                    </div>
+                    <div>
+                        <label for="status sekolah">Status Sekolah</label>
+                        <select name="status sekolah" id="pekerjaan">
+                            <option value=""></option>
+                            <option value="Negeri">Negeri</option>
+                            <option value="Swasta">Swasta</option>
+                            <option value="Luar Negeri">Luar Negeri</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="prodi">Pogram Studi (Prodi)/Jurusan</label>
+                        <input class="inputin" type="text" id="prodi" placeholder="Masukkan Prodi/Jurusan">
+                    </div>
+                    <div>
+                        <label for="nomorijazah">Nomor Ijazah SMA / SMK / MA</label>
+                        <input class="inputin" type="number" id="nomorijazah" placeholder="Masukkan Nomor Ijazah">
+                    </div>
+                    <div>
+                        <label for="tanggal lulus">Tanggal Lulus</label>
+                        <input class="inputin" type="date" id="tanggal lulus">
+                    </div>
+                    <div>
+                        <label for="nilai ipk">Nilai Indek Prestasi Komulatif (IPK)</label>
+                        <input class="inputin" type="number" id="nilai ipk" placeholder="Masukkan Nilai IPK">
+                    </div>
+                    <div>
+                        <label for="ttd">Upload Tanda Tangan Digital</label><br>
+                        <input class="inputin" type="file" id="ttd">
+                    </div>
+                    <div>
+                        <button type="submit">Kirim Data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
